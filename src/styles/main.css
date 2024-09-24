@@ -70,7 +70,7 @@ Router {
   }
 
   .bubbles {
-    overflow: visible; 
+    overflow: visible;
   }
 }
 
@@ -80,7 +80,7 @@ header {
 
 .general-Header {
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
   padding-top: 2rem;
   margin: 0 auto;
@@ -88,14 +88,15 @@ header {
 
 .download {
   display: flex;
-  justify-content: center; 
-  flex: 1; }
+  justify-content: center;
+  flex: 1;
+}
 
 .download-list {
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  padding: 0; 
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .download a {
@@ -110,12 +111,12 @@ header {
 }
 
 .download a:hover {
-  background-color: #bbb; 
+  background-color: #bbb;
 }
 
 .download i {
-  margin-right: 8px; 
-  font-size: 1.2em; 
+  margin-right: 8px;
+  font-size: 1.2em;
 }
 
 .linkEndin1 {
@@ -140,15 +141,15 @@ header {
 .general-Header .header-Name a {
   color: #431894;
   display: block;
-  padding: 8px 12px; 
+  padding: 8px 12px;
   background-color: #dddddd;
   text-decoration: none;
-  border-radius: 5px; 
-  transition: background-color 0.3s ease; 
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .general-Header .header-Name a:hover {
-  background-color: #bbb; 
+  background-color: #bbb;
 }
 
 .general-Header .header-Content {
@@ -170,12 +171,12 @@ header {
   padding: 8px 12px;
   background-color: #dddddd;
   text-decoration: none;
-  border-radius: 5px; 
-  transition: background-color 0.3s ease; 
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .general-Header .header-Content a:hover {
-  background-color: #bbb; 
+  background-color: #bbb;
 }
 
 .toggle_menu {
@@ -231,10 +232,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
-  
 }
-
 
 .home__layer {
   overflow: hidden;
@@ -321,12 +319,11 @@ header {
   }
 }
 
-
 .contact__info-data {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px; 
+  gap: 15px;
 }
 /* Estilos para cada ítem de contacto */
 .contact__info-item1,
@@ -335,7 +332,7 @@ header {
 .contact__info-item4 {
   display: flex;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .contact__info-item1 i,
@@ -351,8 +348,8 @@ header {
 .contact__info-mail a {
   text-decoration: none;
   color: #122849;
-  font-size: 16px; 
-  line-height: 1.5; 
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .contact__info-number a:hover,
@@ -370,9 +367,9 @@ header {
   }
   .intro {
     margin: 8rem;
-    max-width: 60%; 
-    margin-left: 0 auto; 
-
+    max-width: 60%;
+    margin-left: 0 auto;
+  }
   .presentation {
     display: flex;
     flex-direction: column;
@@ -419,27 +416,13 @@ header {
     max-width: 60%;
   }
   .footer {
-    font-size: 14px; 
+    font-size: 14px;
   }
 }
 
-<<<<<<< HEAD
-/* Media Queries para mejorar en pantallas pequeñas */
-@media (max-width: 768px) {
-  .my-Image {
-    max-width: 10rem; /* Disminuir el tamaño máximo en pantallas más pequeñas */
-  }
-}
-
-@media (max-width: 480px) {
-  .my-Image {
-    max-width: 8rem; /* Disminuir aún más en pantallas muy pequeñas */
-  }
-}
-=======
 .my-description {
-  font-size: 16px; 
-  line-height: 1.5; 
+  font-size: 16px;
+  line-height: 1.5;
   padding: 20px;
 }
 
@@ -447,22 +430,19 @@ header {
 @media (max-width: 450px) {
   .my-description {
     max-width: 100%;
-    
   }
 }
-
 
 @media (min-width: 601px) and (max-width: 900px) {
   .my-description {
-    font-size: 15px; 
-    padding: 18px; 
+    font-size: 15px;
+    padding: 18px;
   }
 }
 
-
 @media (min-width: 901px) {
   .my-description {
-    font-size: 18px; 
-    padding: 25px; 
+    font-size: 18px;
+    padding: 25px;
+  }
 }
->>>>>>> 67d50ba34d3d02482fb0fdbbab4705e9e3d56a9d
