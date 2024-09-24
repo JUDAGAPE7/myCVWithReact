@@ -211,10 +211,14 @@ header {
   }
 
   .toggle_menu {
+    z-index: 10;
     display: block; /* Mostrar el botón del menú en dispositivos pequeños */
   }
 
   .dropdown_menu {
     right: 0; /* Alinear a la derecha */
+  }
+  .bx-menu {
+    z-index: 10;
   }
 }
