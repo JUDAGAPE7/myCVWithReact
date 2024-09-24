@@ -1,0 +1,237 @@
+:root {
+  --i: 2;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0c192c;
+}
+
+.bubbles {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.bubbles span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #4fc3dc;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d7544, 0 0 100px #ff2d7544;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+
+@media (max-width: 1364px) {
+  .main-Container {
+    flex-grow: 1;
+  }
+
+  .bubbles {
+    overflow: visible;
+  }
+}
+
+.main-Container1 {
+  scrollbar-width: none;
+}
+
+.presentation {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.logos {
+  padding: 0 2em;
+  color: #c7b75b;
+  height: 300px;
+  max-width: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__layer {
+  overflow: hidden;
+  left: 50%;
+  font-size: 50px;
+}
+
+.intro {
+  max-width: 40%;
+  margin-left: 5em;
+
+  .animated {
+    text-align: center;
+    color: #c7b75b;
+  }
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-10 0%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.intro p {
+  text-align: justify;
+  color: #bbb;
+}
+
+.my-Image {
+  border-radius: 50%;
+  max-width: 14rem;
+  width: 100%;
+  height: auto;
+}
+
+.my-Image {
+  border-radius: 50%;
+  max-width: 14rem;
+  width: 100%;
+  height: auto;
+}
+
+.intro {
+  max-width: 40%;
+  margin-left: 5em;
+}
+
+.intro h2 {
+  text-align: center;
+  color: rgb(199, 183, 91);
+}
+
+.intro p {
+  text-align: justify;
+  color: #bbb;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: none;
+  margin: 0;
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 375px) {
+  .my-description {
+    max-width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 600px) {
+  .my-description {
+    font-size: 15px;
+    padding: 18px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .my-description {
+    font-size: 17px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 901px) {
+  .my-description {
+    font-size: 18px;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bubbles {
+    display: flex; /* Asegúrate de que sea un contenedor flexible */
+    flex-direction: column; /* Cambiar a columna para centrar */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    height: 100vh; /* Ocupar toda la altura de la ventana */
+  }
+
+  .presentation {
+    margin-top: -50rem;
+    justify-content: center; /* Centrar el contenido */
+    align-items: center; /* Centrar verticalmente */
+    flex-direction: column; /* Cambiar a columna si es necesario */
+  }
+
+  .logos {
+    max-width: 90%; /* Ajustar el tamaño en pantallas pequeñas */
+    height: auto; /* Permitir que el tamaño se ajuste */
+    padding: 0; /* Eliminar padding si es necesario */
+  }
+
+  .intro {
+    max-width: 90%; /* Ajustar el tamaño en pantallas pequeñas */
+    margin-left: 0; /* Eliminar margen a la izquierda */
+    margin-right: 0; /* Eliminar margen a la derecha */
+    text-align: center; /* Centrar el texto */
+  }
+}

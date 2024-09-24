@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import AboutMe from "./pages/AboutMe";
-import "./styles/index.css";
+import "./styles/main.css";
 import HomePage from "./pages/HomePage";
 import Skills from "./pages/Skills";
 import Portfolio from "./pages/Portfolio";
@@ -37,7 +37,7 @@ function App() {
             <ul className="download">
               <li className="download-list">
                 <a
-                  href="public/downloads/Hoja de vida.pdf"
+                  href="/downloads/Hoja de vida.pdf"
                   download="Hoja_de_vida.pdf"
                 >
                   <i className="bx bx-cloud-download"></i>Descarga CV
@@ -68,8 +68,8 @@ function App() {
               </li>
             </ul>
           </nav>
-          <div className="toggle_menu">
-            <i onClick={handleClick} className="bx bx-menu open"></i>
+          <div className="toggle_menu" onClick={handleClick}>
+            <i className="bx bx-menu open"></i>
           </div>
           <div className={`dropdown_menu ${menuOpen ? "open" : ""}`}>
             <ul>
@@ -106,8 +106,8 @@ function App() {
           </Routes>
         </main>
 
-        <div>
-          <div className="footer">
+        <div className="footer">
+          <div>
             <h3>Información de Contacto</h3>
 
             <address className="contact__info-data">

@@ -1,4 +1,4 @@
-import "../styles/main.css";
+import "./stylesPages/homePage.css";
 import my_image from "/images/my_picture.jpeg";
 
 const HomePage = () => {
@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <>
       <div>
-        <div className="main-Container">
+        <div className="main-Container1">
           <div className="sub-Container">
             <div className="bubbles">
               {Array.from({ length: 48 }, (_, i) => (
