@@ -1,0 +1,243 @@
+.skills {
+  padding: 2rem;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 3rem;
+  color: #9c8e40;
+}
+
+.animated {
+  font-size: 3rem;
+}
+
+.skills__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills__description {
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.skills__wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+}
+
+.skills__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.skills__cards-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 100px;
+  background-color: #a2c2e2;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.skills__cards-container[open] {
+  background-color: #a2c2e2;
+  transform: scale(1.05);
+}
+
+.skills__card-title {
+  text-align: center;
+  color: #9c8e40;
+  margin-bottom: 0.5rem;
+}
+
+.bx {
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+.skills__cards-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #9c8e40;
+  transition: background-color 0.3s;
+}
+
+.skills__cards {
+  cursor: pointer;
+}
+
+.skills__cards-title:hover {
+  background-color: rgba(255, 255, 255, 0.425);
+}
+
+.skills__card-container {
+  padding: 1rem;
+}
+
+.skills__card-description {
+  margin: 0;
+  text-align: center;
+}
+
+.skills__tags-container {
+  width: 90%;
+  max-width: 1836px;
+  margin-inline: auto;
+  position: relative;
+  height: 100px;
+  margin-top: 5rem;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollRight {
+  to {
+    right: -200px;
+  }
+}
+
+.items {
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+  height: 70px;
+  border-radius: 6px;
+  background-color: #a2c2e2;
+  position: absolute;
+  right: max(calc(200px * 5), 100%);
+  animation-name: scrollRight;
+  animation-duration: 18s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__tags-container:hover .items {
+  animation-play-state: paused;
+  background-color: #a2e2a2;
+}
+
+.skills__tag1 {
+  animation-delay: calc(18s / 6 * (6 - 1) * -1);
+}
+.skills__tag2 {
+  animation-delay: calc(18s / 6 * (6 - 2) * -1);
+}
+.skills__tag3 {
+  animation-delay: calc(18s / 6 * (6 - 3) * -1);
+}
+.skills__tag4 {
+  animation-delay: calc(18s / 6 * (6 - 4) * -1);
+}
+.skills__tag5 {
+  animation-delay: calc(18s / 6 * (6 - 5) * -1);
+}
+.skills__tag6 {
+  animation-delay: calc(18s / 6 * (6 - 6) * -1);
+}
+
+@media (max-width: 768px) {
+  .skills__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills__cards {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  .skills__container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@-webkit-keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.rollIn {
+  -webkit-animation-name: rollIn;
+  animation-name: rollIn;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    color: #9c8e40;
+  }
+  50% {
+    transform: scale(1.05);
+    color: #a2c2e2;
+  }
+}
+
+.pulsing-title {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  animation: pulse 3s infinite;
+  text-align: center;
+}
