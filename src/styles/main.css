@@ -211,8 +211,10 @@ header {
   }
 
   .toggle_menu {
-    z-index: 10;
-    display: block; /* Mostrar el botón del menú en dispositivos pequeños */
+    display: block; /* Asegúrate de que esté visible */
+    padding: 10px; /* Aumenta el padding para que sea más fácil de clicar */
+    cursor: pointer;
+    z-index: 10; /* Asegúrate de que esté encima de otros elementos */
   }
 
   .dropdown_menu {
