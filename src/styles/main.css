@@ -211,7 +211,7 @@ header {
   }
 
   .toggle_menu {
-    display: block; /* Asegúrate de que esté visible */
+    display: flex; /* Asegúrate de que esté visible */
     padding: 10px; /* Aumenta el padding para que sea más fácil de clicar */
     cursor: pointer;
     z-index: 10; /* Asegúrate de que esté encima de otros elementos */
