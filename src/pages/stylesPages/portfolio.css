@@ -1,12 +1,22 @@
 .carousel {
-  max-width: 55%;
+  max-width: 47%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 70vh;
-  margin: -5px auto;
+  margin: -4px auto;
   padding: 0;
+}
+
+.title_portfolio {
+  text-align: center;
+  color: #c7b75b;
+}
+
+.comentaries {
+  text-align: center;
+  color: #ddd;
 }
 
 .project-buttons {

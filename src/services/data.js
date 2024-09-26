@@ -13,12 +13,12 @@ export const data = [
     label: "Pokedex",
     description: "Una aplicación para consultar información sobre Pokémon.",
     demo: "https://weather-app-react-public.netlify.app/",
-    code: "https://github.com/JUDAGAPE7/Wather_App_React.git",
+    code: "https://pokepage-poke-react.netlify.app/",
   },
   {
     id: 3,
     original: "/images/Postman.png",
-    label: "Postman",
+    label: "Ecommerce DB",
     description:
       "Una herramienta donde se prueba y se documenta la API e-commerce.",
     code: "https://github.com/JUDAGAPE7/Entrega_Final_Node.git",

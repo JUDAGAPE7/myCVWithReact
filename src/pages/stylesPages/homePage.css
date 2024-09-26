@@ -186,6 +186,9 @@ body {
 }
 
 @media (min-width: 451px) and (max-width: 600px) {
+  .main-Container1 {
+    margin-top: 6px;
+  }
   .my-description {
     font-size: 15px;
     padding: 18px;
