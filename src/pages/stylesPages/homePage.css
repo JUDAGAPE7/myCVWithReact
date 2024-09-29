@@ -183,6 +183,11 @@ body {
     font-size: 16px;
     line-height: 1.6;
   }
+
+  .my-Image {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 451px) and (max-width: 600px) {
@@ -211,30 +216,30 @@ body {
 
 @media (max-width: 600px) {
   .bubbles {
-    display: flex; /* Asegúrate de que sea un contenedor flexible */
-    flex-direction: column; /* Cambiar a columna para centrar */
-    justify-content: center; /* Centrar verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    height: 100vh; /* Ocupar toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 
   .presentation {
     margin-top: -50rem;
-    justify-content: center; /* Centrar el contenido */
-    align-items: center; /* Centrar verticalmente */
-    flex-direction: column; /* Cambiar a columna si es necesario */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .logos {
-    max-width: 90%; /* Ajustar el tamaño en pantallas pequeñas */
-    height: auto; /* Permitir que el tamaño se ajuste */
-    padding: 0; /* Eliminar padding si es necesario */
+    max-width: 90%;
+    height: auto;
+    padding: 0;
   }
 
   .intro {
-    max-width: 90%; /* Ajustar el tamaño en pantallas pequeñas */
-    margin-left: 0; /* Eliminar margen a la izquierda */
-    margin-right: 0; /* Eliminar margen a la derecha */
-    text-align: center; /* Centrar el texto */
+    max-width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
   }
 }

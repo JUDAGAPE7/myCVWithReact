@@ -1,26 +1,25 @@
 html,
 body {
-  margin: 0; /* Eliminar márgenes por defecto */
-  padding: 0; /* Eliminar padding por defecto */
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 .main-Container::-webkit-scrollbar {
-  display: none; /* Ocultar la barra de desplazamiento */
+  display: none;
 }
 
 body::-webkit-scrollbar {
-  display: none; /* Ocultar la barra de desplazamiento */
+  display: none;
 }
 
-/* Para ocultar las barras de desplazamiento en Firefox */
 body {
-  scrollbar-width: none; /* Ocultar la barra de desplazamiento en Firefox */
+  scrollbar-width: none;
 }
 
 .main-Container {
-  scrollbar-width: none; /* Ocultar la barra de desplazamiento en Firefox */
+  scrollbar-width: none;
 }
 
 .main-Container {
@@ -59,15 +58,15 @@ header {
 
 .general-Header .header-Name,
 .download {
-  display: flex; /* Hacer que las listas sean flexibles */
-  align-items: flex-end; /* Alinear al fondo */
-  margin: 0; /* Eliminar márgenes */
-  padding: 0; /* Eliminar padding */
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 .header-Name li,
 .download li {
-  margin-right: 20px; /* Espacio entre los elementos */
+  margin-right: 20px;
 }
 
 .header-Name li,
@@ -79,32 +78,32 @@ header {
 .header-Name li a,
 .download-list a,
 .header-Content li a {
-  display: inline-block; /* Convertir en bloque en línea */
-  padding: 0.5rem 1rem; /* Espaciado interior más pequeño */
-  background-color: #c7b75b; /* Color de fondo del botón */
-  color: #fff; /* Color del texto */
-  text-decoration: none; /* Sin subrayado */
-  border-radius: 8px; /* Bordes redondeados */
-  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
-  text-align: center; /* Centrar texto */
-  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #c7b75b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 .header-Name li a:hover,
 .download-list a:hover,
 .header-Content li a:hover {
-  background-color: #a89b4f; /* Color de fondo al pasar el ratón */
-  transform: translateY(-2px); /* Efecto de elevación */
+  background-color: #a89b4f;
+  transform: translateY(-2px);
 }
 
 .header-Name li a:active,
 .download-list a:active,
 .header-Content li a:active {
-  transform: translateY(1px); /* Efecto al hacer clic */
+  transform: translateY(1px);
 }
 
 .toggle_menu {
-  display: none; /* Ocultar por defecto */
+  display: none;
   cursor: pointer;
   z-index: 1;
 }
@@ -147,7 +146,7 @@ header {
   background-color: #fff;
   padding: 2rem;
   text-align: center;
-  flex-shrink: 0; /* Asegura que el footer no se reduzca */
+  flex-shrink: 0;
 }
 
 .footer h3 {
@@ -166,18 +165,18 @@ header {
 .contact__info-data {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centrar los elementos en pantallas pequeñas */
+  align-items: center;
 }
 
 .contact__info-item1 i,
 .contact__info-item2 i,
 .contact__info-item3 i {
-  margin-right: 0.5rem; /* Espacio entre icono y texto */
+  margin-right: 0.5rem;
 }
 
 .contact__info-data > div {
   display: flex;
-  align-items: flex-end; /* Alinear los iconos al fondo */
+  align-items: flex-end;
 }
 
 /* Estilos para enlaces */
@@ -190,35 +189,35 @@ header {
 /* Media Queries para dispositivos pequeños */
 @media (max-width: 768px) {
   .footer {
-    padding: 1rem; /* Reducir padding en pantallas pequeñas */
+    padding: 1rem;
   }
 
   .contact__info-data {
-    flex-direction: column; /* Colocar los elementos en una columna */
+    flex-direction: column;
   }
 
   .contact__info-item1,
   .contact__info-item2,
   .contact__info-item3 {
-    margin: 0.5rem 0; /* Espacio entre elementos */
+    margin: 0.5rem 0;
   }
 }
 
 /* Media Queries para dispositivos pequeños */
 @media (max-width: 900px) {
   .header-Content {
-    display: none; /* Ocultar enlaces en dispositivos pequeños */
+    display: none;
   }
 
   .toggle_menu {
-    display: flex; /* Asegúrate de que esté visible */
-    padding: 10px; /* Aumenta el padding para que sea más fácil de clicar */
+    display: flex;
+    padding: 10px;
     cursor: pointer;
-    z-index: 10; /* Asegúrate de que esté encima de otros elementos */
+    z-index: 10;
   }
 
   .dropdown_menu {
-    right: 0; /* Alinear a la derecha */
+    right: 0;
   }
   .bx-menu {
     z-index: 10;
